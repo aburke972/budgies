@@ -1,0 +1,73 @@
+:root{
+    --var-kkwet-color: #66ff66;
+    --var-pistache-color: #0066ff;
+    --var-pirouette-color: #9999ff;
+    --var-main-height: 700px;
+    --var-dayOdd-color: rgba(235, 235, 224,0.90);
+    --var-dayEven-color: rgba(235, 235, 224,0.30);
+}
+
+header,#main,footer{
+    margin: 10px 5px;
+    padding: 0px;
+    text-align: center;
+}
+
+header{
+    height: 15%;
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 3px;
+}
+
+#main{
+    height: var(--var-main-height);
+    width: 100%;
+    border-radius: 3px;
+    border: 1px gray solid;
+    background-color: rgba(204, 204, 255,0.15);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.day{
+    height: 100%;
+    width: 5%;
+}
+
+.odd{
+    background-color: var(--var-dayOdd-color);
+}
+
+.even{
+    background-color: var(--var-dayEven-color);
+}
+
+.kkwet, .pistache, .pirouette{
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+}
+
+.kkwet{
+    background-color: var(--var-kkwet-color);
+}
+
+.pirouette{
+    background-color: var(--var-pirouette-color);
+}
+
+.pistache{
+    background-color: var(--var-pistache-color);
+}
+
+footer{
+/*     position: relative;
+    bottom: 0px; */
+    margin-top: 30px;
+    border: 1px black solid;
+    border-radius: 3px;
+    height: 10%; 
+    width: 100%;
+}
+
