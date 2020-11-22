@@ -578,6 +578,7 @@ let myData  = [
 
 
 const chartDiv = document.getElementById("chart")
+const topReference = chartDiv.clientHeight
 
 function createChartEntry(day,budgy,weight){
     
@@ -585,7 +586,7 @@ function createChartEntry(day,budgy,weight){
     let upperWeight = weight * 3 //just to make the div more visible
 
     //position the div at the bottom, starting from the top
-    let stylePosition = 350 - upperWeight - 5  // 5 for padding-top
+    let stylePosition = topReference - upperWeight - 5  // 5 for padding-top
 
     //preparing parent element. A parent element, divParent, is a representation of a day. A day will contain two values, one per budgy. 
     //there will be 2 columns per day. One per value. Each value will be represented as a child elevement, divChild.

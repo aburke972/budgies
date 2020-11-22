@@ -3,29 +3,40 @@
     --var-pistache-color: #0066ff;
     --var-pirouette-color: #9999ff;
     --var-slider-height: 350px;
-    --var-chart-height: 350px;
+    --var-chart-height: 200px;
     --var-dayOdd-color: rgba(235, 235, 224,0.90);
     --var-dayEven-color: rgba(235, 235, 224,0.30);
 }
 
-header,#chart,footer{
-    margin: 10px 5px;
+header,#slider, #chart,footer{
+    
     padding: 0px;
     text-align: center;
 }
 
-header,#chart{
+body{
+    background-color: rgba(204, 255, 153,0.6)
+}
+
+header, #slider, #chart{
+    margin: 10px 0px;
     font-family: 'Nerko One', cursive;
 }
 
 header{
-    height: 15%;
+    height: 10%;
     width: 100%;
     border: 1px black solid;
     border-radius: 3px;
     font-size: 25px;
-    color: grey;
-    text-shadow: black -2px -2px;
+    color: #99cc00;
+    text-shadow: black -2px -2px 4px;
+}
+
+#slider{
+    height: var(--var-slider-height);
+    border: 1px gray solid;
+    border-radius: 3px;
 }
 
 #chart{
@@ -68,6 +79,7 @@ header{
 
 .pirouette-highlight{
     background-color: greenyellow;
+    color: grey;
 }
 
 .pistache{
@@ -76,20 +88,21 @@ header{
 
 .pistache-highlight{
     background-color: darkcyan;
+    color: white
 }
 
 .weaning{
     background-color: red;
+    color: white;
 }
 
 
 footer{
-/*     position: relative;
-    bottom: 0px; */
-    margin-top: 30px;
+    margin-top: 10px;
     border: 1px black solid;
     border-radius: 3px;
     height: 10%; 
     width: 100%;
+    font-weight: bold;
 }
 
