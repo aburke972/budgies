@@ -2,15 +2,20 @@
     --var-kkwet-color: #66ff66;
     --var-pistache-color: #0066ff;
     --var-pirouette-color: #9999ff;
-    --var-main-height: 700px;
+    --var-slider-height: 350px;
+    --var-chart-height: 350px;
     --var-dayOdd-color: rgba(235, 235, 224,0.90);
     --var-dayEven-color: rgba(235, 235, 224,0.30);
 }
 
-header,#main,footer{
+header,#chart,footer{
     margin: 10px 5px;
     padding: 0px;
     text-align: center;
+}
+
+header,#chart{
+    font-family: 'Nerko One', cursive;
 }
 
 header{
@@ -18,21 +23,24 @@ header{
     width: 100%;
     border: 1px black solid;
     border-radius: 3px;
+    font-size: 25px;
+    color: grey;
+    text-shadow: black -2px -2px;
 }
 
-#main{
-    height: var(--var-main-height);
+#chart{
+    height: var(--var-chart-height);
     width: 100%;
     border-radius: 3px;
     border: 1px gray solid;
     background-color: rgba(204, 204, 255,0.15);
     display: flex;
     flex-flow: row nowrap;
-}
+    justify-content: space-around;
+ }
 
 .day{
     height: 100%;
-    width: 5%;
 }
 
 .odd{
@@ -43,7 +51,7 @@ header{
     background-color: var(--var-dayEven-color);
 }
 
-.kkwet, .pistache, .pirouette{
+.kkwet, .pistache, .pirouette, .pirouette-highlight, .pistache-highlight, .weaning{
     text-align: center;
     padding-top: 5px;
     position: relative;
@@ -57,9 +65,23 @@ header{
     background-color: var(--var-pirouette-color);
 }
 
+
+.pirouette-highlight{
+    background-color: greenyellow;
+}
+
 .pistache{
     background-color: var(--var-pistache-color);
 }
+
+.pistache-highlight{
+    background-color: darkcyan;
+}
+
+.weaning{
+    background-color: red;
+}
+
 
 footer{
 /*     position: relative;

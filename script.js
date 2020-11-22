@@ -1,77 +1,583 @@
 /* import * as importedData from './module/data' */
 let myData  = [
-    {
-      "day":1,
-      "data":[
-            {
-                "name":"kwet",
-                "weight":30
-            },
-            {
-              "name":"pis",
-              "weight":30
-            },
-            {
-              "name":"pir",
-              "weight":30
-            }
-        ]
-    },
-        {
-      "day":2,
-      "data":[
-            {
-                "name":"kwet",
-                "weight":35
-            },
-            {
-              "name":"pis",
-              "weight":31
-            },
-            {
-              "name":"pir",
-              "weight":32
-            }
-        ]
-    },
-    {
-      "day":3,
-      "data":[
-            {
-                "name":"kwet",
-                "weight":32
-            },
+  {
+    "day":1,
+    "data":[
           {
             "name":"pis",
-            "weight":30
+            "weight":34
           },
           {
             "name":"pir",
-            "weight":30
+            "weight":31
           }
       ]
   },
-    {
-    "day":4,
+  {
+    "day":2,
     "data":[
-        {
-            "name":"kwet",
-            "weight":30
-        },
           {
             "name":"pis",
-            "weight":31
+            "weight":33
           },
           {
             "name":"pir",
-            "weight":32
+            "weight":31
           }
       ]
-  }
+  },
+  {
+    "day":3,
+    "data":[
+        {
+          "name":"pis",
+          "weight":34
+        },
+        {
+          "name":"pir",
+          "weight":32
+        }
+    ]
+},
+  {
+  "day":4,
+  "data":[
+        {
+          "name":"pis",
+          "weight":35
+        },
+        {
+          "name":"pir",
+          "weight":34
+        }
+    ]
+},
+  {
+    "day":5,
+    "data":[
+          {
+            "name":"pis",
+            "weight":38
+          },
+          {
+            "name":"pir",
+            "weight":37
+          }
+      ]
+  },
+  {
+    "day":6,
+    "data":[
+          {
+            "name":"pis",
+            "weight":38
+          },
+          {
+            "name":"pir",
+            "weight":39
+          }
+      ]
+  },
+  {
+    "day":7,
+    "data":[
+        {
+          "name":"pis",
+          "weight":40
+        },
+        {
+          "name":"pir",
+          "weight":40
+        }
+    ]
+},
+  {
+    "day":8,
+    "data":[
+          {
+            "name":"pis",
+            "weight":42
+          },
+          {
+            "name":"pir",
+            "weight":42
+          }
+      ]
+  },
+  {
+    "day":9,
+    "data":[
+          {
+            "name":"pis",
+            "weight":42
+          },
+          {
+            "name":"pir",
+            "weight":43
+          }
+      ]
+  },
+  {
+    "day":10,
+    "data":[
+
+        {
+          "name":"pis",
+          "weight":42
+        },
+        {
+          "name":"pir",
+          "weight":43
+        }
+    ]
+},
+  {
+  "day":11,
+  "data":[
+       {
+          "name":"pis",
+          "weight":43
+        },
+        {
+          "name":"pir",
+          "weight":43
+        }
+    ]
+},
+  {
+    "day":12,
+    "data":[
+          {
+            "name":"pis",
+            "weight":43
+          },
+          {
+            "name":"pir",
+            "weight":43
+          }
+      ]
+  },
+  {
+    "day":13,
+    "data":[
+          {
+            "name":"pis",
+            "weight":43
+          },
+          {
+            "name":"pir",
+            "weight":43
+          }
+      ]
+  },
+  {
+    "day":14,
+    "data":[
+        {
+          "name":"pis",
+          "weight":42
+        },
+        {
+          "name":"pir",
+          "weight":43
+        }
+    ]
+},
+  {
+    "day":15,
+    "data":[
+          {
+            "name":"pis",
+            "weight":43
+          },
+          {
+            "name":"pir",
+            "weight":43
+          }
+      ]
+  },
+  {
+    "day":16,
+    "data":[
+        {
+          "name":"pis-flight",
+          "weight":42
+        },
+        {
+          "name":"pir",
+          "weight":43
+        }
+    ]
+},
+  {
+  "day":17,
+  "data":[
+        {
+          "name":"pis",
+          "weight":39
+        },
+        {
+          "name":"pir",
+          "weight":42
+        }
+    ]
+},
+  {
+    "day":18,
+    "data":[
+          {
+            "name":"pis",
+            "weight":39
+          },
+          {
+            "name":"pir-flight",
+            "weight":41
+          }
+      ]
+  },
+  {
+    "day":19,
+    "data":[
+          {
+            "name":"pis-weaning",
+            "weight":38
+          },
+          {
+            "name":"pir-weaning",
+            "weight":41
+          }
+      ]
+  },
+  {
+    "day":20,
+    "data":[
+        {
+          "name":"pis",
+          "weight":39
+        },
+        {
+          "name":"pir",
+          "weight":39
+        }
+    ]
+},
+  {
+    "day":21,
+    "data":[
+        {
+          "name":"pis",
+          "weight":38
+        },
+        {
+          "name":"pir",
+          "weight":41
+        }
+    ]
+},  
+  {
+    "day":22,
+    "data":[
+        {
+          "name":"pis",
+          "weight":40
+        },
+        {
+          "name":"pir",
+          "weight":39
+        }
+    ]
+}, 
+  {
+    "day":23,
+    "data":[
+        {
+          "name":"pis-weaning",
+          "weight":40
+        },
+        {
+          "name":"pir-weaning",
+          "weight":42
+        }
+    ]
+}, 
+  {
+    "day":24,
+    "data":[
+        {
+          "name":"pis",
+          "weight":40
+        },
+        {
+          "name":"pir",
+          "weight":43
+        }
+    ]
+}, 
+  {
+    "day":25,
+    "data":[
+        {
+          "name":"pis",
+          "weight":37
+        },
+        {
+          "name":"pir",
+          "weight":43
+        }
+    ]
+}, 
+  {
+    "day":26,
+    "data":[
+        {
+          "name":"pis",
+          "weight":39
+        },
+        {
+          "name":"pir",
+          "weight":42
+        }
+    ]
+}, 
+  {
+    "day":27,
+    "data":[
+        {
+          "name":"pis",
+          "weight":39
+        },
+        {
+          "name":"pir",
+          "weight":40
+        }
+    ]
+}, 
+  {
+    "day":28,
+    "data":[
+        {
+          "name":"pis",
+          "weight":39
+        },
+        {
+          "name":"pir",
+          "weight":40
+        }
+    ]
+}, 
+  {
+    "day":29,
+    "data":[
+        {
+          "name":"pis",
+          "weight":39
+        },
+        {
+          "name":"pir",
+          "weight":41
+        }
+    ]
+}, 
+  {
+    "day":30,
+    "data":[
+        {
+          "name":"pis",
+          "weight":41
+        },
+        {
+          "name":"pir",
+          "weight":43
+        }
+    ]
+}, 
+  {
+    "day":31,
+    "data":[
+         {
+          "name":"pis",
+          "weight":39
+        },
+        {
+          "name":"pir",
+          "weight":41
+        }
+    ]
+}, 
+  {
+    "day":32,
+    "data":[
+        {
+          "name":"pis",
+          "weight":40
+        },
+        {
+          "name":"pir",
+          "weight":40
+        }
+    ]
+}, 
+  {
+    "day":33,
+    "data":[
+        {
+          "name":"pis",
+          "weight":41
+        },
+        {
+          "name":"pir",
+          "weight":42
+        }
+    ]
+},    
+  {
+    "day":34,
+    "data":[
+        {
+          "name":"pis",
+          "weight":38
+        },
+        {
+          "name":"pir",
+          "weight":40
+        }
+    ]
+}, 
+  {
+    "day":35,
+    "data":[
+        {
+          "name":"pis",
+          "weight":38
+        },
+        {
+          "name":"pir",
+          "weight":40
+        }
+    ]
+}, 
+  {
+    "day":36,
+    "data":[
+        {
+          "name":"pis",
+          "weight":39
+        },
+        {
+          "name":"pir",
+          "weight":41
+        }
+    ]
+},
+  {
+    "day":37,
+    "data":[
+        {
+          "name":"pis",
+          "weight":36
+        },
+        {
+          "name":"pir",
+          "weight":38
+        }
+    ]
+}, 
+  {
+    "day":38,
+    "data":[
+        {
+          "name":"pis",
+          "weight":36
+        },
+        {
+          "name":"pir",
+          "weight":38
+        }
+    ]
+ },
+  {
+    "day":39,
+    "data":[
+        {
+          "name":"pis",
+          "weight":36
+        },
+        {
+          "name":"pir",
+          "weight":38
+        }
+    ]
+},
+  {
+    "day":40,
+    "data":[
+        {
+          "name":"pis",
+          "weight":36
+        },
+        {
+          "name":"pir",
+          "weight":37
+        }
+    ]
+},
+  {
+    "day":41,
+    "data":[
+        {
+          "name":"pis",
+          "weight":34
+        },
+        {
+          "name":"pir",
+          "weight":35
+        }
+    ]
+},
+  {
+    "day":42,
+    "data":[
+        {
+          "name":"pis",
+          "weight":34
+        },
+        {
+          "name":"pir",
+          "weight":37
+        }
+    ]
+},
+  {
+    "day":43,
+    "data":[
+
+        {
+          "name":"pis",
+          "weight":34
+        },
+        {
+          "name":"pir",
+          "weight":35
+        }
+    ]
+},
+  {
+        "day":44,
+    "data":[
+        {
+          "name":"pis",
+          "weight":34
+        },
+        {
+          "name":"pir",
+          "weight":36
+        }
+    ]
+}
 ]
 
 
-const mainDiv = document.getElementById("main")
+const chartDiv = document.getElementById("chart")
 
 function createChartEntry(day,budgy,weight){
     
@@ -79,8 +585,10 @@ function createChartEntry(day,budgy,weight){
     let upperWeight = weight * 3 //just to make the div more visible
 
     //position the div at the bottom, starting from the top
-    let stylePosition = 700 - upperWeight - 5  // 5 for padding-top
+    let stylePosition = 350 - upperWeight - 5  // 5 for padding-top
 
+    //preparing parent element. A parent element, divParent, is a representation of a day. A day will contain two values, one per budgy. 
+    //there will be 2 columns per day. One per value. Each value will be represented as a child elevement, divChild.
 
     let divParent = document.createElement("div")
     divParent.classList.add("day")
@@ -92,9 +600,12 @@ function createChartEntry(day,budgy,weight){
         dayClassName = "odd"   
     }
 
+    //adding parent element to chart div
+
     divParent.classList.add(dayClassName)
-    mainDiv.appendChild(divParent)
+    chartDiv.appendChild(divParent)
     
+    // preparing child element 
     if(budgy == "pis"){
         budgyClassName = "pistache"
     } 
@@ -103,6 +614,18 @@ function createChartEntry(day,budgy,weight){
     }
     if(budgy == "kwet"){
         budgyClassName = "kkwet"
+    }
+
+    if(budgy == "pis-flight"){
+        budgyClassName = "pistache-highlight"
+    }
+
+    if(budgy == "pir-flight"){
+      budgyClassName = "pirouette-highlight"
+    }
+
+    if(budgy.indexOf("weaning") > -1){
+      budgyClassName = "weaning"
     }
      
     let divChild = document.createElement("div")
