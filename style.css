@@ -2,13 +2,13 @@
     --var-kkwet-color: #66ff66;
     --var-pistache-color: #0066ff;
     --var-pirouette-color: #9999ff;
-    --var-slider-height: 350px;
+    --var-sliders-height: 250px;
     --var-chart-height: 200px;
     --var-dayOdd-color: rgba(235, 235, 224,0.90);
     --var-dayEven-color: rgba(235, 235, 224,0.30);
 }
 
-header,#slider, #chart,footer{
+header,#sliders, #chart,footer{
     
     padding: 0px;
     text-align: center;
@@ -18,7 +18,7 @@ body{
     background-color: rgba(204, 255, 153,0.6)
 }
 
-header, #slider, #chart{
+header, #sliders, #chart{
     margin: 10px 0px;
     font-family: 'Nerko One', cursive;
 }
@@ -33,9 +33,17 @@ header{
     text-shadow: black -2px -2px 4px;
 }
 
-#slider{
-    height: var(--var-slider-height);
+#sliders{
+    height: var(--var-sliders-height);
     border: 1px gray solid;
+    border-radius: 3px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.slider{
+    width: 25%;
+    border: 1px darkgreen solid;
     border-radius: 3px;
 }
 
@@ -106,3 +114,78 @@ footer{
     font-weight: bold;
 }
 
+@media only screen and (max-width: 600px) {
+    header{
+        height: 10%;
+        font-size: 15px;
+    }
+
+    #sliders{
+        height: calc(var(--var-sliders-height) * 4);
+        flex-flow: column nowrap;
+    }
+
+    .slider {
+        width:100%;
+        height: 25%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header{
+        height: 10%;
+        font-size: 15px;
+    }
+
+    #sliders{
+        height: calc(var(--var-sliders-height) * 2);
+        flex-flow: row wrap;
+    }
+
+    .slider {
+        /* flex: 0 0 50%; */
+        width: 50%;
+        height: 50%;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    header{
+        height: 10%;
+        font-size: 20px;
+    }
+
+    #sliders{
+        height: calc(var(--var-sliders-height) * 2);
+        flex-flow: row wrap;
+    }
+
+    .slider {
+        /* flex: 0 0 50%; */
+        width: 50%;
+        height: 50%;
+        box-sizing: border-box;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    header{
+        height: 10%;
+        font-size: 20px;
+    }
+
+    #sliders{
+        height: var(--var-sliders-height);
+        flex-flow: row wrap;
+    }
+
+    .slider {
+        /* flex: 0 0 50%; */
+        height: 100%;
+        width: 25%;
+        box-sizing: border-box;
+    }
+
+}
