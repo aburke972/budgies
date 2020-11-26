@@ -143,7 +143,6 @@ footer{
     }
 
     .slider {
-        /* flex: 0 0 50%; */
         width: 50%;
         height: 50%;
         box-sizing: border-box;
@@ -162,7 +161,6 @@ footer{
     }
 
     .slider {
-        /* flex: 0 0 50%; */
         width: 50%;
         height: 50%;
         box-sizing: border-box;
@@ -182,7 +180,6 @@ footer{
     }
 
     .slider {
-        /* flex: 0 0 50%; */
         height: 100%;
         width: 25%;
         box-sizing: border-box;
