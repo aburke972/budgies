@@ -1,8 +1,5 @@
-import {myData,pirouette} from './data.js'
-
-/* alert("coucou " + pirouette) */
-
-console.log(myData.length)
+import {myData,pirouette,pistache} from './data.js'
+import {spreadImages,refreshImages} from './sliders.js'
 
 
 const chartDiv = document.getElementById("chart")
@@ -69,10 +66,17 @@ function createChartEntry(day,budgy,weight){
     
 }
 
-for(let i = 0; i < myData.length; i++){
-    let dataPerDay = myData[i].data
-    for (let j = 0; j < dataPerDay.length; j++){
-        console.log(`${myData[i].day} => Data ${dataPerDay[j].name} : ${dataPerDay[j].weight}`)
-        createChartEntry(myData[i].day,dataPerDay[j].name,dataPerDay[j].weight)
+function createChart(){
+    for(let i = 0; i < myData.length; i++){
+        let dataPerDay = myData[i].data
+        for (let j = 0; j < dataPerDay.length; j++){
+            //console.log(`${myData[i].day} => Data ${dataPerDay[j].name} : ${dataPerDay[j].weight}`)
+            createChartEntry(myData[i].day,dataPerDay[j].name,dataPerDay[j].weight)
+        }
     }
 }
+
+createChart()
+
+spreadImages(2)
+//refreshImages()

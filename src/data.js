@@ -578,4 +578,23 @@ let myData  = [
 let pirouette = "Pirouette"
 let pistache = "Pistache"
 
-export {myData,pirouette};
+let images = [
+  {
+    "name":"laFile",
+    "src":"../images/laFile.png"
+  },
+  {
+    "name":"laPesée",
+    "src":"../images/laPesée.png"
+  },
+  {
+    "name":"laSieste",
+    "src":"../images/laSieste.png"
+  },
+  {
+    "name":"laPesée-2",
+    "src":"../images/laPesée-2.jpg"
+  }
+]
+
+export {myData,images,pirouette,pistache};
