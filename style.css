@@ -46,10 +46,12 @@ header{
     border: 1px darkgreen solid;
     border-radius: 3px;
     overflow: hidden;
+    margin-top: 1px;
 }
 
 img{
     max-height: fit-content;
+    box-shadow: darkgreen -5px -5px 15px;
 }
 
 #chart{

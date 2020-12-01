@@ -78,5 +78,5 @@ function createChart(){
 
 createChart()
 
-spreadImages(2)
+spreadImages(3)
 //refreshImages()

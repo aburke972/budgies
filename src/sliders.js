@@ -36,6 +36,20 @@ function spreadImages(lap){
                 }
             }
 
+            if(lap == 3){
+                if(i == 0){
+                    slidersCount[i].innerHTML = `<img src=${images[i+3].src} alt=${images[i+3].name}>`
+                }
+                else{
+                    if(i < 2){
+                    slidersCount[i].innerHTML = `<img src=${images[i-i].src} alt=${images[i-i].name}>`
+                    }
+                    else{
+                        slidersCount[i].innerHTML = `<img src=${images[i-1].src} alt=${images[i-1].name}>`
+                    }
+                }
+            }
+
         }        
     }
 }
